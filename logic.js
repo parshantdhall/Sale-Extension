@@ -6,20 +6,24 @@ button to click*/
 var btn = document.getElementsByTagName("button");
 var searchtext = " BUY NOW";
 
+
+/*
+Below code's logic -:
+On loading thhe page the function will search for the buy button on the page
+by going through every button on the page comparing their name, and if the 
+button found it will show the alert which gives info about the button.
+*/
+
 window.onload = function() {
     for(i=0;i<btn.length;i++){
         if(btn[i].textContent == searchtext){
-            // alert(btn[i].textContent+
-            //     "<-- ClassName -->"
-            //     +btn[i].className+"<-- Type -->"+btn[i].type);
-            document.getElementsByClassName('_2AkmmA _2Npkh4 _2kuvG8 _7UHT_c')[2].click();
+            alert(btn[i].textContent+
+                "  <-- ClassName -->  "
+                +btn[i].className+"  <-- Type -->  "+btn[i].type);
     }
+}
+
 }
 
 
 
-
-// for(i=0;i<btn.length;i++)
-// {
-//     alert(btn.length);
-// }
